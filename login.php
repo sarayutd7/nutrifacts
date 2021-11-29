@@ -4,26 +4,33 @@ include('conn/function.inc.php');
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     
-	
-    
-    
+
+
+
+
     <!-- Bootstrap -->
     <link href="library/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="library/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-     
+
     <!-- Animate.css -->
     <link href="css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="css/custom.min.css" rel="stylesheet">
-    
-     
+
+
     <!-- bootstrap-datetimepicker -->
     <link href="library/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
     
-    
+    <!-- fix set color datepicker use this one page -->
+    <style type="text/css">
+    .datepicker {
+    background-color: #fff ;
+    color: #333 ;
+    }
+    </style>
+    <!-- fix set color datepicker -->
   </head>
 
   <body class="login">
@@ -42,10 +49,10 @@ include('conn/function.inc.php');
               <div>
                 <input type="password" class="form-control" placeholder="Password" required="" id="password" name="password"/>
               </div>
-              
-              <div> 
+
+              <div>
                 <button type="submit" class="btn btn-round btn-success">Log in</button>
-                <a class="reset_pass" href="#">Lost your password?</a> 
+                <a class="reset_pass" href="#">Lost your password?</a>
               </div>
 
               <div class="clearfix"></div>
@@ -78,9 +85,9 @@ include('conn/function.inc.php');
     <!-- Bootstrap -->
     <script src="library/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- bootstrap-daterangepicker -->
-    <script src="library/moment/min/moment.min.js"></script> 
-    <!-- bootstrap-datetimepicker -->    
-    <script src="library/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script> 
+    <script src="library/moment/min/moment.min.js"></script>
+    <!-- bootstrap-datetimepicker -->
+    <script src="library/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script>
     $('#calendar').datetimepicker( { format: 'DD/MM/YYYY' } );
 	</script>

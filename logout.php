@@ -19,7 +19,7 @@ if($_SESSION['session_user']!=''){
 	$insert_log = "insert into login set log_username = '".$_SESSION['session_user']."', log_logintime = '".date('Y-m-d H:i:s')."', log_ip = '".$_SERVER['REMOTE_ADDR']."', log_status = 'logout', log_sessionid = '".$_SESSION['session_userid']."'";
 	insert_data($insert_log);
 	//-------------------------------------------------
-	update_data("update user_db set loginstatus ='0', session_id = '' where username = '".$_SESSION['session_user']."'");
+	//update_data("update user_db set loginstatus ='0', session_id = '' where username = '".$_SESSION['session_user']."'");
 	//-------------------------------------------------
 	
 	unset ($_SESSION['session_userid']);

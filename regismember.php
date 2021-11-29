@@ -30,7 +30,7 @@ $insert_data = "insert into member set memberCode = '".$_REQUEST['code']."',
 									   memberType = '1'"; 
 insert_data($insert_data);
 session_destroy();  
-$sql = "select * from member where memberCode = '".$_REQUEST['code']."' and memberUsername = '".$_REQUEST['username']."'";
+$sql = "select * from member where memberUsername = '".$_REQUEST['username']."' and memberGenden  = '".$_REQUEST['gender']."' and memberEmail = '".$_REQUEST['email']."' and memberDateofBirth = '".$dob."'";
 $req_member = get_a_line($sql); //exit();
 //echo PHPalert("เพิ่มข้อมูลผุ้ใช้งานเรียบร้อยแล้ว");
 $url = 'comfirmregister.php?mdc='.$req_member['memberID']; //exit();
